@@ -1,0 +1,349 @@
+/* =================
+  WRITE YOUR CSS HERE.
+  Check the ⌄ for help with formatting and validating your code.
+  You must write some CSS to complete this challenge.
+   ===================
+*/
+
+ul {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+a {
+  color: red;
+  text-decoration: none;
+  background-color: transparent;
+}
+a:hover {
+  color: green;
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.col,
+.col-md-4,
+.col-md-5,
+.col-md-6,
+.col-sm-10 {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.col {
+  flex-basis: 0;
+  flex-grow: 1;
+  max-width: 100%;
+}
+@media (min-width: 576px) {
+  .col-sm-10 {
+    flex: 0 0 83.33333%;
+    max-width: 83.33333%;
+  }
+}
+@media (min-width: 768px) {
+  .col-md-4 {
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+  }
+  .col-md-5 {
+    flex: 0 0 41.66667%;
+    max-width: 41.66667%;
+  }
+  .col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+.form-control {
+  display: block;
+  width: 100%;
+  height: calc(1.5em + 0.8rem + 2px);
+  padding: 0.4rem 0.78rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.2rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+p.text {
+  width: 100%;
+  height: calc(1.2em + 0.8rem + 5px);
+  padding: 0.3rem 0.1rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  border-radius: 0.2rem;
+}
+
+textarea.form-control {
+  height: auto;
+}
+.form-group {
+  margin-bottom: 1rem;
+}
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -5px;
+  margin-left: -5px;
+}
+.form-row > .col {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+.nav-link {
+  display: block;
+  padding: 0.5rem 1rem;
+}
+.nav-link:focus,
+.nav-link:hover {
+  text-decoration: none;
+}
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+}
+.navbar > .container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar-nav {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+.navbar-nav .nav-link {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-collapse {
+  flex-basis: 100%;
+  flex-grow: 1;
+  align-items: center;
+}
+.navbar-toggler {
+  padding: 0.25rem 0.75rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 0.2rem;
+}
+.navbar-toggler:focus,
+.navbar-toggler:hover {
+  text-decoration: none;
+}
+.navbar-toggler-icon {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+  content: "";
+  background: no-repeat center center;
+  background-size: 100% 100%;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+@media (max-width: 767.98px) {
+  .navbar-expand-md > .container {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+@media (min-width: 768px) {
+  .navbar-expand-md {
+    justify-content: flex-start;
+  }
+  .navbar-expand-md .navbar-nav {
+    flex-direction: row;
+  }
+  .navbar-expand-md .navbar-nav .nav-link {
+    padding-right: 0.7rem;
+    padding-left: 0.7rem;
+  }
+  .navbar-expand-md > .container {
+    flex-wrap: nowrap;
+  }
+  .navbar-expand-md .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+  }
+  .navbar-expand-md .navbar-toggler {
+    display: none;
+  }
+}
+
+.border-0 {
+  border: 0 !important;
+}
+.justify-content-between {
+  justify-content: space-between !important;
+}
+
+.w-100 {
+  width: 100% !important;
+}
+.pt-5 {
+  padding-top: 3rem !important;
+}
+.ml-auto {
+  margin-left: auto !important;
+}
+.text-center {
+  text-align: center !important;
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+body {
+  font-family: Ubuntu, sans-serif;
+  color: #495057;
+  background: #fff;
+  box-sizing: border-box;
+  padding: 5px;
+  margin: 2px;
+}
+p {
+  font-size: calc(13px + (14 - 13) * ((100vw - 300px) / (1300 - 300)));
+  opacity: 0.8;
+  color: #444;
+}
+.title {
+  font-size: 1em;
+}
+nav.page-navbar {
+  min-height: 70px;
+  padding: 0 30px;
+  transition: all 0.3s linear 0s;
+  width: 100%;
+  background-color: #fff;
+  color: #fff;
+  top: 0;
+  position: fixed;
+  z-index: 1;
+}
+@media (max-width: 767.98px) {
+  nav.page-navbar .navbar-collapse {
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.3s linear 0s;
+  }
+}
+.c-site-header {
+  background: #efefef
+    url(https://images.unsplash.com/photo-1542903660-eedba2cda473?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NTc0NjMyNDQ&ixlib=rb-1.2.1&q=80);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  height: 598px;
+}
+.c-site-header .header-content {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+}
+.c-site-header .header-content p {
+  color: #fff;
+  opacity: 1;
+  margin-bottom: 5px;
+  font-size: calc(12px + (16 - 14) * ((100vw - 300px) / (1200 - 300)));
+}
+body,
+html {
+  height: 100%;
+}
+section {
+  padding: 100px 0;
+}
+section:nth-child(odd) {
+  background-color: #eaf0fc;
+}
+
+.img-wrapper img {
+  position: relative;
+  width: 90%;
+  border-radius: 0.2rem;
+  box-shadow: 0 3px 80px rgba(173, 181, 189, 0.5),
+    0 0 10px rgba(173, 181, 189, 0.7) !important;
+}
+@media (max-width: 767.5px) {
+  .img-wrapper img {
+    display: block;
+    margin: 20px 0;
+  }
+}
+
+.testmonial-wrapper {
+  background: #eaf0fc;
+  box-shadow: 0 2px 5px 0 rgba(173, 181, 189, 0.4) !important;
+  border-radius: 0.2rem;
+  padding: 0 20px 20px;
+  margin-bottom: 60px;
+}
+.c-site-footer {
+  background-color: #eaf0fc;
+  text-align: center;
+  padding: 10px;
+  margin-top: 2px;
+  font-size: 12px;
+}
+
+/* don't edit this */
+.jest-lite-report__status--pass {
+  background: var(--color-pass);
+}
+.jest-lite-report__errors { display:none }
